@@ -5,12 +5,14 @@
 	<groupId>org.xj3d</groupId>
 	<artifactId>common-pom</artifactId>
 	<version>1.0.0</version>
-	<name>common-pom</name>
 	<description>common pom for Xj3D</description>
 	<packaging>pom</packaging>
+	<name>common-pom</name>
 
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	
 		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
 		<github.global.server>github</github.global.server>
 	</properties>
