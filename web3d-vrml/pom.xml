@@ -1,20 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.xj3d</groupId>
-    <artifactId>module-pom</artifactId>
-    <version>1.0.0</version>
-  </parent>
-  <groupId>org.web3d</groupId>
-  <artifactId>web3d-vrml</artifactId>
-  <version>1.0.0</version>
-  <name>web3d-vrml</name>
-  <description>org.web3d.vrml</description>
-  <dependencies>
-  	<dependency>
-  		<groupId>org.web3d</groupId>
-  		<artifactId>web3d-utils</artifactId>
-  		<version>1.0.0</version>
-  	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.xj3d</groupId>
+		<artifactId>module-pom</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<groupId>org.web3d</groupId>
+	<artifactId>web3d-vrml</artifactId>
+	<version>1.0.0</version>
+	<name>web3d-vrml</name>
+	<description>org.web3d.vrml</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.web3d</groupId>
+			<artifactId>web3d-utils</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.fastinfoset</groupId>
+			<artifactId>FastInfoset</artifactId>
+			<version>1.2.9</version>
+		</dependency>
+
+	</dependencies>
 </project>
