@@ -60,7 +60,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      *
      * @param msg The text of the message to be displayed
      */
-    @Override
+    
     public void partialReport(String msg) {
         System.out.print(msg);
     }
@@ -71,7 +71,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      *
      * @param msg The text of the message to be displayed
      */
-    @Override
+    
     public void messageReport(String msg) {
         System.out.print("Message: ");
         System.out.println(msg);
@@ -85,7 +85,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      * @param msg The text of the message to be displayed
      * @param e The exception that caused this warning. May be null
      */
-    @Override
+    
     public void warningReport(String msg, Exception e) {
         System.out.print("Warning: ");
         System.out.println(msg);
@@ -102,7 +102,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      * @param msg The text of the message to be displayed
      * @param e The exception that caused this warning. May be null
      */
-    @Override
+    
     public void warningReport(String msg, Throwable e) {
         System.out.print("Warning: ");
         System.out.println(msg);
@@ -119,7 +119,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      * @param msg The text of the message to be displayed
      * @param e The exception that caused this warning. May be null
      */
-    @Override
+    
     public void errorReport(String msg, Exception e) {
         System.out.print("Error: ");
         System.out.println(msg);
@@ -135,7 +135,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      * @param msg The text of the message to be displayed
      * @param e The exception that caused this warning. May be null
      */
-    @Override
+    
     public void errorReport(String msg, Throwable e) {
         System.out.print("Error: ");
         System.out.println(msg);
@@ -153,7 +153,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      * @param msg The text of the message to be displayed
      * @param e The exception that caused this warning. May be null
      */
-    @Override
+    
     public void fatalErrorReport(String msg, Throwable e) {
         System.out.print("Fatal Error: ");
         System.out.println(msg);
@@ -170,7 +170,7 @@ public class DefaultErrorReporter implements ErrorReporter {
      * @param msg The text of the message to be displayed
      * @param e The exception that caused this warning. May be null
      */
-    @Override
+    
     public void fatalErrorReport(String msg, Exception e) {
         System.out.print("Fatal Error: ");
         System.out.println(msg);

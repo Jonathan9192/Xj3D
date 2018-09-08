@@ -39,7 +39,6 @@ public interface ErrorReporter extends org.j3d.util.ErrorReporter {
      *
      * @param msg The text of the message to be displayed
      */
-    @Override
     void partialReport(String msg);
 
     /**
@@ -48,7 +47,7 @@ public interface ErrorReporter extends org.j3d.util.ErrorReporter {
      *
      * @param msg The text of the message to be displayed
      */
-    @Override
+    
     void messageReport(String msg);
 
     /**
@@ -61,7 +60,7 @@ public interface ErrorReporter extends org.j3d.util.ErrorReporter {
      * @throws VRMLException This is bad enough that the reporter should stop
      *    what they are currently doing.
      */
-    @Override
+    
     void warningReport(String msg, Exception e);
 
     /**
@@ -74,7 +73,7 @@ public interface ErrorReporter extends org.j3d.util.ErrorReporter {
      * @throws VRMLException This is bad enough that the reporter should stop
      *    what they are currently doing.
      */
-    @Override
+    
     void errorReport(String msg, Exception e);
 
     /**
@@ -88,6 +87,6 @@ public interface ErrorReporter extends org.j3d.util.ErrorReporter {
      * @throws VRMLException This is bad enough that the reporter should stop
      *    what they are currently doing.
      */
-    @Override
+    
     void fatalErrorReport(String msg, Exception e);
 }
