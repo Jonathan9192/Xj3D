@@ -11,4 +11,15 @@
   <packaging>pom</packaging>
   <name>module-pom</name>
   <description>pom for modules</description>
+  
+  <repositories>
+    <repository>
+        <id>mvn-repo</id>
+        <url>https://rawgit.com/Jonathan9192/maven-repo/master</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+    </repository>
+</repositories>
+
 </project>
