@@ -30,7 +30,7 @@
 							<url>http://localhost:8081/repository/maven-releases/</url>
 							<groupId>toxi</groupId>
 							<artifactId>toxiclibs-core</artifactId>
-							<version>1.0.20</version>
+							<version>1.0.22</version>
 							<packaging>jar</packaging>
 						</configuration>
 					</execution>
