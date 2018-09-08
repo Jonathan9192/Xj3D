@@ -335,7 +335,7 @@ public class DefaultNodeFactory
      *
      * @param reporter The instance to use or null
      */
-    @Override
+    
     public void setErrorReporter(ErrorReporter reporter) {
         errorReporter = reporter;
 
@@ -352,7 +352,7 @@ public class DefaultNodeFactory
      * @throws UnsupportedSpecVersionException The profile is not unsupported by
      *    this implementation
      */
-    @Override
+    
     public void setSpecVersion(int major, int minor)
         throws UnsupportedSpecVersionException {
 
@@ -426,7 +426,7 @@ synchronized(globalRendererPrefixMap) {
      *
      * @return An int array of major, minor version.
      */
-    @Override
+    
     public int[] getSpecVersion() {
         return new int[] { majorVersion, minorVersion };
     }
@@ -440,7 +440,7 @@ synchronized(globalRendererPrefixMap) {
      * @throws UnsupportedProfileException The profile is not unsupported by
      *    this implementation
      */
-    @Override
+    
     public void setProfile(String profile)
         throws UnsupportedProfileException {
 
@@ -495,7 +495,7 @@ synchronized(globalRendererPrefixMap) {
      *
      * @return An int array of major, minor version.
      */
-    @Override
+    
     public int[] getMaxSupportedSpecVersion() {
         // TODO: Discover the real values for this
         return new int[] {3, 3};
@@ -509,7 +509,7 @@ synchronized(globalRendererPrefixMap) {
      * @param componentName The component name
      * @param level The component level and higher to disable
      */
-    @Override
+    
     public void disableComponent(int[] specVersion, String componentName, int level) {
         System.err.println("Disable component not implemented");
     }
@@ -525,7 +525,7 @@ synchronized(globalRendererPrefixMap) {
      * @throws UnsupportedComponentException The component or level is not
      *    unsupported by this implementation
      */
-    @Override
+    
     public ComponentInfo addComponent(String name, int level)
         throws UnsupportedComponentException {
 
@@ -606,7 +606,7 @@ synchronized(globalRendererPrefixMap) {
      * @param level The level of the component to support
      * @return The component definition if found, null if not
      */
-    @Override
+    
     public ComponentInfo findComponent(String name, int level) {
         Integer lvl;
 
@@ -653,7 +653,7 @@ synchronized(globalRendererPrefixMap) {
      * @param name The name of the profile
      * @return The profile definition if found, null if not
      */
-    @Override
+    
     public ProfileInfo findProfile(String name) {
 
         // Do we know this is already invalid?
@@ -688,7 +688,7 @@ synchronized(globalRendererPrefixMap) {
      *
      * @return A list of the supported profiles
      */
-    @Override
+    
     public ProfileInfo[] getAvailableProfiles() {
         return globalProfileList.get(specVersion);
     }
@@ -700,7 +700,7 @@ synchronized(globalRendererPrefixMap) {
      *
      * @return A list of the supported profile names
      */
-    @Override
+    
     public String[] getAvailableProfileNames() {
         return globalAvailableProfileNames.get(specVersion);
     }
@@ -711,7 +711,7 @@ synchronized(globalRendererPrefixMap) {
      *
      * @return The definition of all the available components
      */
-    @Override
+    
     public ComponentInfo[] getAvailableComponents() {
         return globalComponentList.get(specVersion);
     }
@@ -728,7 +728,7 @@ synchronized(globalRendererPrefixMap) {
      * @throws UnsupportedNodeException The node is not part of the declared
      *    profile and components
      */
-    @Override
+    
     public synchronized VRMLNode createVRMLNode(String nodeName,
                                                 boolean staticNode)
         throws UnsupportedNodeException {
@@ -771,7 +771,7 @@ synchronized(globalRendererPrefixMap) {
      * @throws UnsupportedNodeException The node is not part of the declared
      *    profile and components
      */
-    @Override
+    
     public synchronized VRMLNode createVRMLNode(String component,
                                                 String nodeName,
                                                 boolean staticNode)
@@ -836,7 +836,7 @@ synchronized(globalRendererPrefixMap) {
      * @param staticNode Whether this node is will be modified
      * @return An instance of the node initialised to the values or null.
      */
-    @Override
+    
     public synchronized VRMLNode createVRMLNode(VRMLNode node,
                                                 boolean staticNode) {
 
@@ -937,7 +937,7 @@ synchronized(globalRendererPrefixMap) {
      * @return A cloned copy of this instance
      * @throws CloneNotSupportedException Was not able to clone the object
      */
-    @Override
+    
     public Object clone()
         throws CloneNotSupportedException {
 
@@ -1460,7 +1460,7 @@ synchronized(globalRendererPrefixMap) {
 
         InputStream is = (InputStream)AccessController.doPrivileged(
             new PrivilegedAction<Object>() {
-                @Override
+                
                 public Object run() {
                     return ClassLoader.getSystemResourceAsStream(filename);
                 }
