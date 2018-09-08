@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	
+
 		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
 		<github.global.server>github</github.global.server>
 	</properties>
@@ -21,7 +21,7 @@
 		<repository>
 			<id>internal.repo</id>
 			<name>Temporary Staging Repository</name>
-			<url>file://${project.build.directory}/mvn-repo</url>
+			<url>file://${project.build.directory}/../../mvn-repo</url>
 		</repository>
 	</distributionManagement>
 
@@ -44,7 +44,7 @@
 				<configuration>
 					<message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
 					<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
+					<outputDirectory>${project.build.directory}/../../mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
 					<branch>refs/heads/master</branch>                       <!-- remote branch name -->
 					<includes>
 						<include>**/*</include>
