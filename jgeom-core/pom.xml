@@ -27,7 +27,7 @@
 						</goals>
 						<configuration>
 							<file>obj/main/jar/jgeom-core.jar</file>
-							<url>file://${project.build.directory}/mvn-repo</url>
+							<url>file://${project.parent.basedir}/mvn-repo</url>
 							<groupId>net.jgeom</groupId>
 							<artifactId>jgeom-core</artifactId>
 							<version>1.0.0</version>
