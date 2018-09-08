@@ -27,6 +27,7 @@
 						</goals>
 						<configuration>
 							<file>${project.basedir}/obj/main/jar/jgeom-core.jar</file>
+							<repositoryId>local.repo</repositoryId>
 							<url>http://localhost:8081/repository/maven-releases/</url>
 							<groupId>net.jgeom</groupId>
 							<artifactId>jgeom-core</artifactId>
