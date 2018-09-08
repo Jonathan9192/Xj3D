@@ -10,4 +10,11 @@
   <version>1.0.0</version>
   <name>web3d-vrml-renderer</name>
   <description>org.web3d.vrml.renderer.*</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.web3d</groupId>
+  		<artifactId>web3d-vrml</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  </dependencies>
 </project>
