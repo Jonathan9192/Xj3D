@@ -98,7 +98,7 @@ public abstract class BaseReader implements VRMLReader {
      * @throws SAVNotSupportedException The VRMLReader does not recognize
      *   or does not support this property name.
      */
-    @Override
+    
     public Object getProperty(String prop)
         throws SAVNotSupportedException {
 
@@ -118,7 +118,7 @@ public abstract class BaseReader implements VRMLReader {
      * @throws SAVNotSupportedException The VRMLReader does not recognize
      *   or does not support this property name.
      */
-    @Override
+    
     public void setProperty(String name, Object value)
         throws SAVNotSupportedException {
 
@@ -138,7 +138,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param enable true to stop looking for a header
      */
-    @Override
+    
     public void setHeaderIgnore(boolean enable) {
         ignoreHeader = enable;
     }
@@ -149,7 +149,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @return The currently set error handler.
      */
-    @Override
+    
     public ErrorReporter getErrorHandler() {
         return errorReporter;
     }
@@ -160,7 +160,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param eh The error handler instance to use
      */
-    @Override
+    
     public void setErrorHandler(ErrorHandler eh) {
         errorHandler = eh;
     }
@@ -171,7 +171,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param ep The error reporter instance to use
      */
-    @Override
+    
     public void setErrorReporter(ErrorReporter ep) {
         if(ep == null)
             errorReporter = DefaultErrorReporter.getDefaultReporter();
@@ -185,7 +185,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @return The currently set node handler.
      */
-    @Override
+    
     public ContentHandler getContentHandler() {
         return contentHandler;
     }
@@ -196,7 +196,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param ch The content handler instance to use
      */
-    @Override
+    
     public void setContentHandler(ContentHandler ch) {
         contentHandler = ch;
     }
@@ -207,7 +207,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @return The currently set script handler.
      */
-    @Override
+    
     public ScriptHandler getScriptHandler() {
         return scriptHandler;
     }
@@ -219,7 +219,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param sh The script handler instance to use
      */
-    @Override
+    
     public void setScriptHandler(ScriptHandler sh) {
         scriptHandler = sh;
     }
@@ -230,7 +230,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @return The currently set proto handler.
      */
-    @Override
+    
     public ProtoHandler getProtoHandler() {
         return protoHandler;
     }
@@ -242,7 +242,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param ph The proto handler instance to use
      */
-    @Override
+    
     public void setProtoHandler(ProtoHandler ph) {
         protoHandler = ph;
     }
@@ -253,7 +253,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @return The currently set route handler.
      */
-    @Override
+    
     public RouteHandler getRouteHandler() {
         return routeHandler;
     }
@@ -264,7 +264,7 @@ public abstract class BaseReader implements VRMLReader {
      *
      * @param rh The route handler instance to use
      */
-    @Override
+    
     public void setRouteHandler(RouteHandler rh) {
         routeHandler = rh;
     }
