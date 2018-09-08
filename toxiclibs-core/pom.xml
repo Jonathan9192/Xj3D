@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>toxi</groupId>
 	<artifactId>toxiclibs-core</artifactId>
-	<version>1.0.20</version>
+	<version>1.0.21</version>
 	<name>toxiclibs-core</name>
 	<description>toxi clibs-core 20</description>
 
@@ -28,8 +28,8 @@
 						<configuration>
 							<file>${project.basedir}/obj/main/jar/toxiclibscore.jar</file>
 							<url>http://localhost:8081/repository/maven-releases/</url>
-							<groupId>toxi.clibs-core</groupId>
-							<artifactId>clibs-core</artifactId>
+							<groupId>toxi</groupId>
+							<artifactId>toxiclibs-core</artifactId>
 							<version>1.0.20</version>
 							<packaging>jar</packaging>
 						</configuration>
