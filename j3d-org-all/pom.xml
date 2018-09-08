@@ -27,8 +27,8 @@
 							<file>${project.basedir}/obj/main/jar/j3d-org-all_2.0.0.jar</file>
 							<repositoryId>local.repo</repositoryId>
 							<url>http://localhost:8081/repository/maven-releases/</url>
-							<groupId>net.jgeom</groupId>
-							<artifactId>jgeom-core</artifactId>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>${project.artifactId}</artifactId>
 							<version>${project.version}</version>
 							<packaging>jar</packaging>
 						</configuration>
